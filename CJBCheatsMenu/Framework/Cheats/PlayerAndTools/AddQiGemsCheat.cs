@@ -32,6 +32,6 @@ internal class AddQiGemsCheat : BaseCheat
     /// <param name="amount">The amount to add.</param>
     private void AddGems(int amount)
     {
-        Game1.player.addItemToInventoryBool(new Object("858", amount));
+        Game1.player.TryAddToInventory(ItemRegistry.Create("(O)858", amount));
     }
 }
